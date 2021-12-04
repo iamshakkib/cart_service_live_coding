@@ -31,6 +31,14 @@ public class Item {
     @JoinColumn(name = "cart_id") //used to customize foreign key column
     private Cart cart;
 
+    public Cart getCart() {
+        return cart;
+    }
+
+    public void setCart(Cart cart) {
+        this.cart = cart;
+    }
+
     public LocalDateTime getMfgdate() {
         return mfgdate;
     }

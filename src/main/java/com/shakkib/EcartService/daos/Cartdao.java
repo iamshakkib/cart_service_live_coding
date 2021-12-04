@@ -8,4 +8,5 @@ This will be used to do crud operations with the databases
  */
 
 public interface Cartdao extends JpaRepository<Cart,Integer> {
+    public Cart findByCustomerName(String customerName);
 }

@@ -11,7 +11,7 @@ public class Cart {
     private int cartId;
 
     @Column(nullable = false,unique = true)
-    private int userName;
+    private String customerName;
 
     @OneToMany(mappedBy = "cart")
     private List<Item> items;
@@ -24,11 +24,11 @@ public class Cart {
         this.cartId = cartId;
     }
 
-    public int getUserName() {
-        return userName;
+    public String getUserName() {
+        return customerName;
     }
 
-    public void setUserName(int userName) {
-        this.userName = userName;
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 }
