@@ -1,10 +1,12 @@
 package com.shakkib.EcartService.entities;
 
+import com.shakkib.EcartService.dtos.ItemDTO;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-public class Item {
+public class Item{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

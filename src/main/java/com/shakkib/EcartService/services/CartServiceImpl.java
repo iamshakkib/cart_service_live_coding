@@ -1,22 +1,14 @@
-/*package com.shakkib.EcartService.services.impl;
+package com.shakkib.EcartService.services;
 
 import com.shakkib.EcartService.daos.Cartdao;
 import com.shakkib.EcartService.entities.Cart;
 import com.shakkib.EcartService.exceptions.CartNotFoundException;
 import com.shakkib.EcartService.exceptions.CustomerNameNotFoundException;
-import com.shakkib.EcartService.services.Cartservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/*
-its always a good practice to code for interface so first i did created
-interfaces and then their corresponding implementing classes
-and also ITS CORRESPONDING TEST CASES also written in test folder
- */
-
-//@Service
-/*
-public class CartServiceImpl implements Cartservice {
+@Service
+public class CartServiceImpl implements Cartservice{
 
     @Autowired
     private Cartdao cartDao;
@@ -45,4 +37,4 @@ public class CartServiceImpl implements Cartservice {
         }
         return cart;
     }
-}*/
+}

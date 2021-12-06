@@ -5,6 +5,7 @@ import com.shakkib.EcartService.entities.Item;
 import com.shakkib.EcartService.exceptions.CartNotFoundException;
 import com.shakkib.EcartService.exceptions.CustomerNameNotFoundException;
 import com.shakkib.EcartService.exceptions.ItemNotFoundException;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -13,7 +14,8 @@ again we are making service layer which means it contains the
 buisness logic we have
 we will declare and implemet all the methods defining here
  */
-public interface Itemservice {
+
+public interface ItemService{
 
     public Item addItemToCart(Item item, int cartId) throws CartNotFoundException;
 

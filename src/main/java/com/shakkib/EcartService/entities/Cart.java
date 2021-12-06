@@ -1,6 +1,7 @@
 package com.shakkib.EcartService.entities;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,11 +25,29 @@ public class Cart {
         this.cartId = cartId;
     }
 
-    public String getUserName() {
+    public String getCustomerName() {
         return customerName;
     }
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
+    }
+
+    public Cart(int cartId, String customerName, List<Item> items) {
+        this.cartId = cartId;
+        this.customerName = customerName;
+        this.items = items;
+    }
+
+    public Cart() {
+        items = new ArrayList<>();
     }
 }
